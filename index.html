@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>chowon's page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gamja+Flower&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/pc.css" media="screen and (min-width: 768px)">
     <!-- <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 767px)"> -->
     <script src="http://code.jquery.com/jquery-latest.js"></script>
@@ -35,13 +39,14 @@
     <div class="cover">
         <!-- <p id="second-parallel"></p> -->
     </div>
+
     <section class="section" id="title">
         <div class="main">
             <p>
                 <marquee behavior="scroll" id="first-marq">
-                    Hello &nbsp; Nice to meet you How are you? &nbsp; I am fine &nbsp; Thak you
-                    &nbsp;Hello &nbsp; Nice to meet you How are you? &nbsp; I am fine &nbsp; Thak you
-                    &nbsp;Hello &nbsp; Nice to meet you How are you? &nbsp; I am fine &nbsp; Thak you
+                    Hello! &nbsp; Nice to meet you How are you? &nbsp; I am fine &nbsp; Thak you
+                    &nbsp;Hello! &nbsp; Nice to meet you How are you? &nbsp; I am fine &nbsp; Thak you
+                    &nbsp;Hello! &nbsp; Nice to meet you How are you? &nbsp; I am fine &nbsp; Thak you
                 </marquee>
             </p>
             <h1>Portfolio</h1>
@@ -58,14 +63,10 @@
 
     <section class="section" id="aboutMe">
         <article class="photo">
+            <!-- <p>Hello this is what i looks like Nice to meet you</p> -->
             <img src="img/myphoto.jpg" alt="MyPhoto">
-        </article>
-        <article class="aboutMe_info">
-            <h2>안녕하세요!</h2>
-            <h3>미래에 프론트개발자가 되고 싶어 차근차근 배워나가고 있는</h3>
-            <h3>퍼블리셔 임초원이라고 합니다.</h3>
             <h4>
-                <table class="way">
+                <table class="contact">
                     <tr>
                         <td>이메일</td>
                         <td>chowon3827@naver.com</td>
@@ -76,6 +77,11 @@
                     </tr>
                 </table>
             </h4>
+        </article>
+        <article class="aboutMe_info">
+            <h2>안녕하세요!</h2>
+            <h3>미래에 프론트개발자가 되고 싶어 차근차근 배워나가고 있는</h3>
+            <h3>퍼블리셔 임초원이라고 합니다.</h3>
             <div class="license">
                 <h2>자격증</h2>
                 <ul class="license_kind">
@@ -101,23 +107,24 @@
     <section class="section" id="skill">
         <div id="skills">
             <div class="html">
-                <img src="" alt="html">
+                <img src="img/html-icon.png" alt="html">
+                <!-- <a target="_blank" href="https://icons8.com/icon/zRvbzAjx4VWY/html-5">HTML</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
                 <span>활용도 90%</span>
             </div>
             <div class="css">
-                <img src="" alt="css">
+                <img src="img/css-icon.png" alt="css">
                 <span>활용도 90%</span>
             </div>
             <div class="javascript">
-                <img src="" alt="javascript">
+                <img src="img/js-icon.png" alt="javascript">
                 <span>활용도 70%</span>
             </div>
             <div class="jquery">
-                <img src="" alt="jquery">
+                <img src="img/jquery-icon.png" alt="jquery">
                 <span>활용도 70%</span>
             </div>
-            <div class="ps/canva">
-                <img src="" alt="ps/canva">
+            <div class="github">
+                <img src="img/github-icon.png" alt="github">
                 <span>활용도 60%</span>
             </div>
         </div>
@@ -125,24 +132,114 @@
 
     <div id="projects">
         <section class="section" id="first">
-            <h1>웹페이지</h1>
-            <div class="pages">
+            <article id="web">
+                <h1>웹페이지</h1>
                 <div class="main-page">
                     <div class="page-img">
-
+                        <img src="img/project-main.jpg" alt="main-page">
                     </div>
-                    <div class="main-page-info">
-                        
+                    <div class="page-info">
+                        <table>
+                            <tr>
+                                <td>페이지명</td>
+                                <td>rest in nature-main(반응형)</td>
+                            </tr>
+                            <tr>
+                                <td>참여자수</td>
+                                <td>1명</td>
+                            </tr>
+                            <tr>
+                                <td>참여도</td>
+                                <td>100%</td>
+                            </tr>
+                            <tr>
+                                <td>Tool</td>
+                                <td>HTML, CSS, Js, Jquery, Photoshop</td>
+                            </tr>
+                        </table>
+                        <div id="buttons">
+                            <button><a href="https://chococo3827.github.io/portfolio02/">페이지 보기</a></button>
+                            <button><a href="https://github.com/chococo3827/portfolio02.git">코드 보기</a></button>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="sub-page">
-                    <div class="sub-page-img">
-
+                    <div class="page-img">
+                        <img src="img/project-sub.jpg" alt="sub-page">
                     </div>
-                    <div class="sub-page-info"></div>
+                    <div class="page-info">
+                        <table>
+                            <tr>
+                                <td>페이지명</td>
+                                <td>rest in nature-sub(반응형, main sub 이동가능)</td>
+                            </tr>
+                            <tr>
+                                <td>참여자수</td>
+                                <td>1명</td>
+                            </tr>
+                            <tr>
+                                <td>참여도</td>
+                                <td>100%</td>
+                            </tr>
+                            <tr>
+                                <td>Tool</td>
+                                <td>HTML, CSS, Js, Jquery, Photoshop</td>
+                            </tr>
+                        </table>
+                        <div id="buttons">
+                            <button><a href="https://chococo3827.github.io/portfolio02/sub.html">페이지 보기</a></button>
+                            <button><a href="https://github.com/chococo3827/portfolio02.git">코드 보기</a></button>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </article>
+
+            <article id="clone">
+                <h1>클론코딩</h1>
+                <div class="login-page">
+                    <div class="page-img">
+                        <img src="img/login-page.jpg" alt="login-page">
+                    </div>
+                    <div class="page-info">
+                        <table>
+                            <tr>
+                                <td>페이지명</td>
+                                <td>로그인 페이지(새로고침시 명언,이미지 바뀜)</td>
+                            </tr>
+                            <tr>
+                                <td>Tool</td>
+                                <td>HTML, CSS, 바닐라Js</td>
+                            </tr>
+                        </table>
+                        <div id="buttons">
+                            <button><a href="https://chococo3827.github.io/js-practice02/">페이지 보기</a></button>
+                            <button><a href="https://github.com/chococo3827/js-practice02.git">코드 보기</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="draw-page">
+                    <div class="page-img">
+                        <img src="img/draw-page.jpg" alt="draw-page">
+                    </div>
+                    <div class="page-info">
+                        <table>
+                            <tr>
+                                <td>페이지명</td>
+                                <td>그림판</td>
+                            </tr>
+                            <tr>
+                                <td>Tool</td>
+                                <td>HTML, CSS, 바닐라Js</td>
+                            </tr>
+                        </table>
+                        <div id="buttons">
+                            <button><a href="https://chococo3827.github.io/js-practice01/">페이지 보기</a></button>
+                            <button><a href="https://github.com/chococo3827/js-practice01.git">코드 보기</a></button>
+                        </div>
+                    </div>
+                </div>
+            </article>
         </section>
     </div>
 

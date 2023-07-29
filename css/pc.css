@@ -13,7 +13,10 @@ html{
     scroll-behavior: smooth;
     /* overflow: hidden; */
 }
-
+body{
+    /* font-family: 'Black Han Sans', sans-serif; */
+    font-family: 'Gamja Flower', cursive;
+}
 .section{
     width: 100%;
     height: 100vh;
@@ -23,39 +26,19 @@ html{
     background-color: none;
 }
 #aboutMe{
-    background-color: #ff3794e1;
+    background-color: #f0578a;
+    font-family: 'Gamja Flower', cursive;
 }
 #skill{
     background-color: #00BFFF;
 }
 #first{
-    background-color: #00FF40;
+    /* background-color: #20C997; */
+    background-image: linear-gradient(70deg, #20C997 50%,#5C6BC0 50%);
+    font-family: 'Gamja Flower', cursive;
 }
-/* #contact{
-    background-color: yellow;
-} */
 
-/* body{
-    overflow-x: hidden;
-}
-.cover{
-    width: 100vw;
-    display: flex;
-}
-.cover:nth-child(2){
-    transform: rotate(-2deg);
-    background-color: #ff3796;
-}
-.cover:nth-child(3){
-    transform: rotate(2deg);
-    background-color: #5800ff;
-    justify-content: flex-end;
-}
-#title .cover p{
-    display: flex;
-    padding: 1rem 0;
-    font-size: 1em;
-} */
+
 
 /* header */
 header{
@@ -75,16 +58,7 @@ header nav ul li a{
 }
 
 
-/* first section */
-/* #title{position: relative;}
-#first-parallel{
-    position: absolute;
-    top: 20%;
-}
-#second-parallel{
-    position: absolute;
-    bottom: 50%;
-} */
+/* first section (title) */
 #title{
     background-color: black;
 }
@@ -129,14 +103,29 @@ header nav ul li a{
 #aboutMe{
     display: flex;
     align-items: center;
+    color: white;
 }
 #aboutMe .photo{
     width: 20%;
     margin-bottom: 5%;
+    margin-left: 20%;
 }
 #aboutMe .photo img{
     width: 100%;
     border-radius: 50%;
+    animation: rotate_letter 6s linear infinite;
+    transform-origin: 50% 50%;
+}
+@keyframes rotate_letter{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+#aboutMe .photo .contact{
+    width: 100%;
+    margin-top: 10%;
+    margin-left: 15%;
+    font-size: 1.3em;
 }
 
 #aboutMe .aboutMe_info{
@@ -145,12 +134,8 @@ header nav ul li a{
 }
 #aboutMe .aboutMe_info h3{
     margin-top: 3%;
-}
-#aboutMe .aboutMe_info .way{
-    width: 100%;
-    margin-top: 3%;
     margin-bottom: 3%;
-    float: left;
+    font-size: 1.5em;
 }
 .aboutMe_info .license .license_kind{
     font-size: 1em;
@@ -158,7 +143,8 @@ header nav ul li a{
     /* margin-top: 3%; */
 }
 .aboutMe_info .license .license_kind li{
-    padding: 10px 0px;
+    padding: 5px 0px;
+    font-size: 1.2em;
 }
 #academy{
     float: left;
@@ -185,7 +171,18 @@ header nav ul li a{
     text-align: center;
     display: flex;
     justify-content: space-around;
-    padding: 25% 0%;
+    padding: 13% 0%;
+}
+#skills > div{
+    display: flex;
+    flex-direction: column;
+}
+#skills .css, #skills .jquery{
+    margin-top: 5%;
+}
+#skills > div > span{
+    font-size: 22px;
+    color: white;
 }
 
 
@@ -196,20 +193,118 @@ header nav ul li a{
 }
 #first{
     width: 100%;
-    /* display: flex; */
-}
-#first .pages{
     display: flex;
 }
-#projects .main-page, #projects .sub-page{
+#web, #clone{
     width: 50%;
+    /* outline: 2px solid black; */
 }
-#projects .main-page{
-    /* float: left; */
+#web h1, #clone h1{
+    font-size: 3em;
+    text-align: center;
+    margin-top: 10%;
+    color: white;
 }
-#first .pages .main_page .page-img{
-    width: 20%;
+#web .main-page, #clone .login-page{
+    width: 100%;
+    height: 300px;
+    /* outline: 1px solid #333; */
+    margin-top: 3%;
 }
-#first .pages .main_page .page-img img{
-    width: 10%;
+#web .sub-page, #clone .draw-page{
+    width: 100%;
+    height: 300px;
+    margin-top: 3%;
+    /* outline: 1px solid #333; */
+}
+#web .main-page .page-img, #clone .draw-page .page-img{
+    width: 270px;
+    height: 270px;
+    /* border: 2px solid white; */
+    float: right;
+    margin: 1.5%;
+    margin-right: 10%;
+    border-radius: 50%;
+}
+#web .sub-page .page-img, #clone .login-page .page-img{
+    width: 270px;
+    height: 270px;
+    /* border: 2px solid white; */
+    float: left;
+    margin: 1.5%;
+    margin-left: 10%;
+    border-radius: 50%;
+}
+#web .main-page .page-img{
+    background-color: #FFD700;
+}
+#web .sub-page .page-img{
+    background-color: #fff;
+}
+#clone .login-page .page-img{
+    background-color: #f0578a;
+}
+#clone .draw-page .page-img{
+    background-color: #64B5F6;
+}
+#web .main-page .page-info, #web .sub-page .page-info{
+    display: flex;
+    flex-direction: column;
+    padding-top: 7%;
+    font-size: 21px;
+    color: white;
+}
+#clone .login-page .page-info, #clone .draw-page .page-info{
+    display: flex;
+    flex-direction: column;
+    padding-top: 12%;
+    font-size: 21px;
+    color: white;
+}
+#first table tr td{
+    padding-left: 30px;
+    padding-bottom: 10px;
+}
+#clone .login-page .page-info{
+    margin-right: 10%;
+}
+#clone .draw-page .page-info{
+    margin-left: 10%;
+}
+#buttons{
+    display: flex;
+}
+#first button{
+    font-size: 17px;
+    font-family: 'Gamja Flower', cursive;
+    padding: 5px 7px;
+    border: none;
+    background-color: #FF8A65;
+    border-radius: 7px;
+    margin: 0% 3%;
+    width: 100px;
+}
+#web .main-page #buttons{
+    margin-right: 15%;
+}
+#web .sub-page #buttons{
+    margin-left: 11%;
+}
+#clone .login-page #buttons{
+    margin-left: 25%;
+}
+#clone .draw-page #buttons{
+    margin-right: 18%;
+}
+/* 이미지 조정 */
+#first img{
+    width: 240px;
+    border-radius: 3dvh;
+    margin-top: 26%;
+    margin-left: 5%;
+}
+#clone img{
+    width: 230px;
+    margin-top: 16%;
+    margin-left: 7%;
 }

@@ -7,16 +7,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gamja+Flower&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/pc.css" media="screen and (min-width: 768px)">
     <!-- <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 767px)"> -->
     <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="script/mypage.js"></script>
 </head>
 <body>
     <header>
         <nav>
             <ul id="menu">
+                <li>
+                    <a href="#">Head</a>
+                </li>
                 <li>
                     <a href="#aboutMe">About Me</a>
                 </li>
@@ -26,19 +30,12 @@
                 <li>
                     <a href="#projects">Project</a>
                 </li>
-                <li>
+                <!-- <li>
                     <a href="#contact">Contact</a>
-                </li>
+                </li> -->
             </ul>
         </nav>
     </header>
-
-    <div class="cover">
-        <!-- <p id="first-parallel"></p> -->
-    </div>
-    <div class="cover">
-        <!-- <p id="second-parallel"></p> -->
-    </div>
 
     <section class="section" id="title">
         <div class="main">
@@ -49,7 +46,7 @@
                     &nbsp;Hello! &nbsp; Nice to meet you How are you? &nbsp; I am fine &nbsp; Thak you
                 </marquee>
             </p>
-            <h1>Portfolio</h1>
+            <h1 class="animate__animated animate__bounce animate__slow">Portfolio</h1>
             <h3>made by 임초원</h3>
             <p>
                 <marquee behavior="scroll" direction="right" id="second-marq">
@@ -78,9 +75,9 @@
                 </table>
             </h4>
         </article>
-        <article class="aboutMe_info">
+        <article id="aboutMe_info" class="animate__animated" data-effect="animate__jackInTheBox animate__slow">
             <h2>안녕하세요!</h2>
-            <h3>미래에 프론트개발자가 되고 싶어 차근차근 배워나가고 있는</h3>
+            <h3>미래에 프론트엔드개발자가 되고 싶어 차근차근 배워나가고 있는</h3>
             <h3>퍼블리셔 임초원이라고 합니다.</h3>
             <div class="license">
                 <h2>자격증</h2>
@@ -106,26 +103,46 @@
 
     <section class="section" id="skill">
         <div id="skills">
-            <div class="html">
+            <div id="html" class="animate__animated" data-effect="animate__fadeInUp">
                 <img src="img/html-icon.png" alt="html">
                 <!-- <a target="_blank" href="https://icons8.com/icon/zRvbzAjx4VWY/html-5">HTML</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
-                <span>활용도 90%</span>
+                <div class="percent">
+                    <span>활용도</span>
+                    <span class="count-num" data-count="90">0</span>
+                    <span>%</span>
+                </div>
             </div>
-            <div class="css">
+            <div id="css" class="animate__animated" data-effect="animate__fadeInUp animate__delay-1s">
                 <img src="img/css-icon.png" alt="css">
-                <span>활용도 90%</span>
+                <div class="percent">
+                    <span>활용도</span>
+                    <span class="count-num" data-count="90">0</span>
+                    <span>%</span>
+                </div>
             </div>
-            <div class="javascript">
+            <div id="javascript" class="animate__animated" data-effect="animate__fadeInUp animate__delay-2s">
                 <img src="img/js-icon.png" alt="javascript">
-                <span>활용도 70%</span>
+                <div class="percent">
+                    <span>활용도</span>
+                    <span class="count-num" data-count="70">0</span>
+                    <span>%</span>
+                </div>
             </div>
-            <div class="jquery">
+            <div id="jquery" class="animate__animated" data-effect="animate__fadeInUp animate__delay-3s">
                 <img src="img/jquery-icon.png" alt="jquery">
-                <span>활용도 70%</span>
+                <div class="percent">
+                    <span>활용도</span>
+                    <span class="count-num" data-count="70">0</span>
+                    <span>%</span>
+                </div>
             </div>
-            <div class="github">
+            <div id="github" class="animate__animated" data-effect="animate__fadeInUp animate__delay-4s">
                 <img src="img/github-icon.png" alt="github">
-                <span>활용도 60%</span>
+                <div class="percent">
+                    <span>활용도</span>
+                    <span class="count-num" data-count="60">0</span>
+                    <span>%</span>
+                </div>
             </div>
         </div>
     </section>
@@ -157,7 +174,7 @@
                                 <td>HTML, CSS, Js, Jquery, Photoshop</td>
                             </tr>
                         </table>
-                        <div id="buttons">
+                        <div class="buttons">
                             <button><a href="https://chococo3827.github.io/portfolio02/">페이지 보기</a></button>
                             <button><a href="https://github.com/chococo3827/portfolio02.git">코드 보기</a></button>
                         </div>
@@ -187,7 +204,7 @@
                                 <td>HTML, CSS, Js, Jquery, Photoshop</td>
                             </tr>
                         </table>
-                        <div id="buttons">
+                        <div class="buttons">
                             <button><a href="https://chococo3827.github.io/portfolio02/sub.html">페이지 보기</a></button>
                             <button><a href="https://github.com/chococo3827/portfolio02.git">코드 보기</a></button>
                         </div>
@@ -212,7 +229,7 @@
                                 <td>HTML, CSS, 바닐라Js</td>
                             </tr>
                         </table>
-                        <div id="buttons">
+                        <div class="buttons">
                             <button><a href="https://chococo3827.github.io/js-practice02/">페이지 보기</a></button>
                             <button><a href="https://github.com/chococo3827/js-practice02.git">코드 보기</a></button>
                         </div>
@@ -233,7 +250,7 @@
                                 <td>HTML, CSS, 바닐라Js</td>
                             </tr>
                         </table>
-                        <div id="buttons">
+                        <div class="buttons">
                             <button><a href="https://chococo3827.github.io/js-practice01/">페이지 보기</a></button>
                             <button><a href="https://github.com/chococo3827/js-practice01.git">코드 보기</a></button>
                         </div>

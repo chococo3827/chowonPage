@@ -105,7 +105,7 @@ $(window).scroll(function(){
             var $this = $(this),
             countTo = $this.attr('data-count');
             // $this = 첫번째~세번째 .count-num
-            // countTo = 첫번째~세번째 .count-num의 data-count 속성의 값(777,555,333)
+            // countTo = 첫번째~세번째 .count-num의 data-count 속성의 값(90,70,60)
             
             $({ countNum: $this.text()}).animate({
                 countNum: countTo 

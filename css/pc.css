@@ -200,7 +200,7 @@ header nav ul li a.active{
     width: 100%;
 }
 #skills{
-    width: 100%;
+    width: 90%;
     text-align: center;
     display: flex;
     justify-content: space-around;
@@ -211,12 +211,12 @@ header nav ul li a.active{
     display: flex;
     flex-direction: column;
     opacity: 0;
+    margin-top: 5%;
 }
 #skills > div img{
     width: 80%;
 }
 #skills #css, #skills #jquery{
-    margin-top: 5%;
 }
 #skills > div span{
     font-size: 22px;

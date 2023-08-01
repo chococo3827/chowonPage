@@ -26,15 +26,17 @@ body{
     background-color: none;
 }
 #aboutMe{
-    background-color: #f0578a;
+    /* background-color: #f0578a; */
+    background-color: black;
     font-family: 'Gamja Flower', cursive;
 }
 #skill{
-    background-color: #068FFF;
+    /* background-color: #068FFF; */
+    background-color: black;
 }
 #first{
-    /* background-color: #20C997; */
-    background-image: linear-gradient(70deg, #20C997 50%,#4E31AA 50%);
+    background-color: black;
+    /* background-image: linear-gradient(70deg, #20C997 50%,#4E31AA 50%); */
     font-family: 'Gamja Flower', cursive;
 }
 #first.active{

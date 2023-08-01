@@ -12,7 +12,7 @@ a{
 }
 html{
     scroll-behavior: smooth;
-/*     overflow: hidden; */
+    /* overflow: hidden; */
 }
 body{
     /* font-family: 'Black Han Sans', sans-serif; */
@@ -27,21 +27,25 @@ body{
     background-color: none;
 }
 #aboutMe{
-    background-color: #f0578a;
+    /* background-color: #f0578a; */
+    background-color: black;
     font-family: 'Gamja Flower', cursive;
 }
 #skill{
-    background-color: #068FFF;
+    /* background-color: #068FFF; */
+    background-color: black;
 }
 /* #first{
     background-image: linear-gradient(70deg, #20C997 50%,#4E31AA 50%);
     font-family: 'Gamja Flower', cursive;
 } */
 #web{
-    background-color: #20C997;
+    /* background-color: #20C997; */
+    background-color: black;
 }
 #clone{
-    background-color: #4E31AA;
+    /* background-color: #4E31AA; */
+    background-color: black;
 }
 /* #first.active{
     background-image: linear-gradient(100deg, #20C997 50%,#5C6BC0 50%);
@@ -253,11 +257,15 @@ header nav ul li a.active{
     display: flex;
     flex-direction: column;
 }
-#web, #clone{
+#web{
     width: 100%;
     height: 100vh;
-    padding-top: 10%;
     /* outline: 2px solid black; */
+}
+#clone{
+    width: 100%;
+    height: 100vh;
+    padding-top: 20%;
 }
 #web h1, #clone h1{
     font-size: 2em;

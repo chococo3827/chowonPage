@@ -1,0 +1,350 @@
+/* 모바일 버전 */
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{list-style-type: none;}
+a{
+    color: black;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+body{
+    /* font-family: 'Black Han Sans', sans-serif; */
+    font-family: 'Gamja Flower', cursive;
+}
+.section{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+#title{
+    background-color: none;
+}
+#aboutMe{
+    background-color: #f0578a;
+    font-family: 'Gamja Flower', cursive;
+}
+#skill{
+    background-color: #068FFF;
+}
+/* #first{
+    background-image: linear-gradient(70deg, #20C997 50%,#4E31AA 50%);
+    font-family: 'Gamja Flower', cursive;
+} */
+#web{
+    background-color: #20C997;
+}
+#clone{
+    background-color: #4E31AA;
+}
+/* #first.active{
+    background-image: linear-gradient(100deg, #20C997 50%,#5C6BC0 50%);
+    transition: 1s;
+} */
+
+
+
+/* header */
+header{
+    width: 100%;
+    text-align: center;
+    background: none;
+    /* opacity: 0.8; */
+    font-size: 1em;
+    position: fixed;
+    z-index: 999;
+}
+header nav ul li{
+    display: inline-block;
+    padding: 5px 20px;
+    /* margin: 1% 3%; */
+}
+header nav ul li a{
+    color: #fff;
+}
+header nav ul li a.active{
+    border-bottom: 1px solid #ff3796;
+    color: #ff3796;
+    transition: 1s;
+}
+
+
+/* first section (title) */
+#title{
+    background-color: black;
+}
+#title .main{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 30% 0%;
+}
+#title .main h1{
+    font-size: 3em;
+    margin-top: 10%;
+    color: #fff;
+}
+#title .main h3{
+    width: 100px;
+    font-size: 1em;
+    margin-left: 55%;
+    margin-bottom: 10%;
+    color: #fff;
+    border-right: 2px solid white;
+}
+/* 타이핑 애니메이션 */
+#title .main h3{
+    animation: blink 1s infinite, typing 2s steps(20);
+    white-space: nowrap;
+    overflow: hidden;
+}
+@keyframes blink{
+    50%{
+        border-color: transparent;
+    }
+}
+@keyframes typing{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100px;
+    }
+}
+#title .main p marquee{
+    padding: 3px;
+    font-size: 1.5em;
+    color: white;
+}
+#title .main p:first-child{
+    transform: rotate(-3deg);
+    /* margin-top: -5%; */
+    margin-bottom: 30%;
+}
+#title .main p:last-child{
+    transform: rotate(3deg);
+    margin-top: 30%;
+}
+#title .main p:nth-child(1){
+    background-color: #ff3796;
+}
+#title .main p:nth-child(4){
+    background-color: #5800ff;
+}
+
+
+
+/* second section (About Me) */
+#aboutMe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding-top: 10%;
+}
+#aboutMe .photo{
+    width: 200px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    /* margin-left: 20%; */
+}
+#aboutMe .photo img{
+    width: 100%;
+    border-radius: 50%;
+    animation: rotate_letter 6s linear infinite;
+    transform-origin: 50% 50%;
+}
+@keyframes rotate_letter{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+#aboutMe .photo .contact{
+    width: 100%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    /* margin-left: 15%; */
+    font-size: 1em;
+}
+
+#aboutMe #aboutMe_info{
+    width: 80%;
+    text-align: left;
+}
+#aboutMe_info h3{
+    font-weight: 500;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-size: 1.3em;
+}
+#aboutMe_info .license{
+    margin-top: 10%;
+}
+#aboutMe_info .license .license_kind{
+    font-size: 1em;
+    /* font-weight: bold; */
+}
+#aboutMe_info .license .license_kind li{
+    padding: 2% 0%;
+    /* font-size: 1.1em; */
+}
+#academy{
+    float: left;
+    font-size: 0.9em;
+    font-weight: 500;
+    margin-top: 5%;
+}
+#academy .head{
+    padding-right: 20px;
+    font-weight: 600;
+}
+#academy tr td{
+    padding-bottom: 3%;
+}
+
+
+
+
+/* third section(skill) */
+#skill{
+    width: 100%;
+    padding-top: 10%;
+}
+#skills{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 13% 0%;
+}
+#skills > div{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    /* margin-top: 5%; */
+    margin-bottom: 5%;
+}
+#skills > div img{
+    width: 100%;
+}
+#skills #css, #skills #jquery{
+}
+#skills > div span{
+    font-size: 22px;
+    color: white;
+}
+
+
+
+/* fourth section(project) */
+#projects{
+    width: 100%;
+}
+#first{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#web, #clone{
+    width: 100%;
+    height: 100vh;
+    padding-top: 10%;
+    /* outline: 2px solid black; */
+}
+#web h1, #clone h1{
+    font-size: 2em;
+    text-align: center;
+    /* margin-top: 5%; */
+    color: white;
+}
+#web .main-page, #clone .login-page{
+    width: 100%;
+    /* outline: 1px solid #333; */
+    margin-top: 5%;
+}
+#web .sub-page, #clone .draw-page{
+    width: 100%;
+    margin-top: 5%;
+    /* outline: 1px solid #333; */
+}
+#clone .draw-page{
+    padding-top: 10%;
+}
+#web .main-page .page-img, #clone .draw-page .page-img,
+#web .sub-page .page-img, #clone .login-page .page-img{
+    width: 260px;
+    height: 150px;
+    border-radius: 3dvh;
+}
+#web .main-page .page-img{
+    background-color: #FFD700;
+}
+#web .sub-page .page-img{
+    background-color: #fff;
+}
+#clone .login-page .page-img{
+    background-color: #f0578a;
+}
+#clone .draw-page .page-img{
+    background-color: #64B5F6;
+}
+#web .page-info, #clone .page-info{
+    display: flex;
+    flex-direction: column;
+    padding-top: 7%;
+    font-size: 18px;
+    color: white;
+}
+#first table tr td{
+    padding-left: 10px;
+    padding-bottom: 4px;
+}
+#web{
+    padding-bottom: 10%;
+}
+#clone{
+    padding-bottom: 11%;
+}
+#clone > div{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.buttons{
+    display: flex;
+}
+#first button{
+    font-size: 17px;
+    font-family: 'Gamja Flower', cursive;
+    padding: 5px 7px;
+    border: none;
+    background-color: #FF8A65;
+    border-radius: 7px;
+    margin: 5% 3%;
+    width: 100px;
+}
+.buttons a{
+    color: white;
+}
+/* button hover */
+#first .buttons button:hover{
+    background: none;
+    outline: 2px solid white;
+}
+/* 이미지 조정 */
+#first img{
+    width: 240px;
+    border-radius: 3dvh;
+    margin-top: 5%;
+    margin-left: 3%;
+}
+#clone .draw-page .page-img img{
+    height: 120px;
+}
